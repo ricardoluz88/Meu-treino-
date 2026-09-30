@@ -1,26 +1,15 @@
 {
-  "name": "Meu Treino",
+  "name": "Meu Treino 3x por semana",
   "short_name": "Meu Treino",
-  "description": "Plano de treino interativo 3x por semana com histórico de cargas, alternativas de exercícios e controle de tempo.",
-  "id": "./",
+  "description": "Treino interativo A/B/C com registro automático de cargas, repetições, tempo e histórico.",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
-  "orientation": "portrait-primary",
   "background_color": "#f4f6f9",
   "theme_color": "#102a56",
+  "orientation": "portrait-primary",
   "icons": [
-    {
-      "src": "./icon-192.png",
-      "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "any maskable"
-    },
-    {
-      "src": "./icon-512.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "any maskable"
-    }
+    {"src":"./icon-192.png","sizes":"192x192","type":"image/png","purpose":"any maskable"},
+    {"src":"./icon-512.png","sizes":"512x512","type":"image/png","purpose":"any maskable"}
   ]
 }

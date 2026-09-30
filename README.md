@@ -1,23 +1,22 @@
-# Meu Treino — PWA para iPhone
+# Meu Treino — PWA v2.1
 
-Pacote pronto para publicar no GitHub Pages.
+Esta versão mantém o treino A/B/C e acrescenta:
 
-## Arquivos
-- `index.html`: aplicativo de treino interativo.
-- `manifest.webmanifest`: dados do app para instalação.
-- `sw.js`: service worker para funcionamento offline.
-- `icon-192.png`, `icon-512.png`, `apple-touch-icon.png` e `favicon.png`: ícones da Tela de Início e navegador.
-- `.nojekyll`: evita processamento desnecessário pelo Jekyll.
+- histórico automático: **Concluir treino** arquiva a sessão completa sem outra confirmação;
+- **Finalizar parcial** também arquiva a sessão, marcada como parcial;
+- cada registro histórico guarda cargas, repetições, alternativa A/B, esforço, dor, observações, cardio e tempo;
+- o histórico também guarda o nome dos exercícios daquela versão do plano, para continuar legível após futuras alterações;
+- retenção local de até 750 sessões;
+- detecção de atualização da PWA com aviso **Nova versão disponível → Atualizar agora**;
+- atualização sem apagar o histórico local;
+- funcionamento offline após o carregamento inicial.
 
-## Publicação resumida
-1. Crie um repositório no GitHub, por exemplo `meu-treino`.
-2. Envie **todo o conteúdo desta pasta** para a raiz do repositório.
-3. Em **Settings → Pages**, escolha **Deploy from a branch**.
-4. Selecione a branch `main` e a pasta `/(root)` e clique em **Save**.
-5. Aguarde o endereço do GitHub Pages ficar disponível.
-6. Abra esse endereço no Safari do iPhone.
-7. No Safari, escolha **Compartilhar → Adicionar à Tela de Início** e ative **Abrir como App da Web**.
-8. Abra o ícone criado. Após a primeira abertura online, o app também fica disponível offline.
+## Atualizar o GitHub Pages manualmente
 
-## Importante sobre os dados do treino
-Os registros de cargas e histórico ficam salvos no armazenamento local do navegador/web app no próprio aparelho. Use o recurso de backup/exportação do app periodicamente se desejar preservar o histórico em caso de troca de iPhone, limpeza de dados do Safari ou reinstalação.
+Substitua no repositório os arquivos desta pasta (principalmente `index.html`, `sw.js` e `manifest.webmanifest`) e faça um commit. O GitHub Pages publicará automaticamente a nova versão.
+
+No iPhone, ao abrir a PWA, ela verificará se existe uma versão nova. Quando houver, aparecerá um aviso para atualizar.
+
+## Dados pessoais do treino
+
+Cargas, repetições e histórico permanecem no armazenamento local da PWA no iPhone. Eles não são enviados ao repositório público do GitHub. Use **Histórico → Exportar backup JSON** periodicamente para ter uma cópia fora do aparelho.
