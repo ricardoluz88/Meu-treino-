@@ -1,4 +1,4 @@
-const CACHE_NAME = 'meu-treino-shell-v2.1.0';
+const CACHE_NAME = 'meu-treino-shell-v2.3.1.1';
 const APP_SHELL = [
   './',
   './index.html',
